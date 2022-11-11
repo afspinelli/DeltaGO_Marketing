@@ -32,5 +32,16 @@
     <!-- Menu -->
     <script src="/javascripts/menu.js"></script>
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Modal HTML -->
+    <script>
+        $('.extModal').on('click', function (e) {
+            e.preventDefault();
+            $('#servicios-modal').modal('show').find('.modal-content').load($(this).attr('href'));
+        });
+    </script>
+
 </body>
 </html>
